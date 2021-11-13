@@ -1,3 +1,4 @@
+//Code below is used for the date/time
 document.getElementById('display').innerHTML = 'Hello, this is Daniel writing in JavaScript!';
 
 //var date = new Date();
@@ -14,3 +15,19 @@ function refreshTime() {
 }
 
 setInterval(refreshTime, 1000);
+
+//Code below is used for the canvas
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+
+context.fillStyle = 'CornflowerBlue';
+context.fillRect(20, 20, 200, 100); // First rectangle
+
+context.fillStyle = '#9932CC';
+context.fillRect(80, 80, 200, 100); // Second rectangle
+
+context.fillStyle = 'rgb(255, 0, 0)';
+context.fillRect(140, 140, 200, 100); // Third rectangle
+
+context.fillStyle = 'rgba(153, 50, 204, 0.5)';
+context.fillRect(200, 200, 200, 100); // Fourth rectangle
