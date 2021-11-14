@@ -1,5 +1,10 @@
 //Code below is used for the date/time
-document.getElementById('display').innerHTML = 'Hello, this is Daniel writing in JavaScript!';
+function getName() {
+  var person = prompt('Please enter your name:');
+  if (person != null) {
+    document.getElementById('name').innerHTML = "Hello " + person +"!";
+  }
+}
 
 //var date = new Date();
 //var n = date.toDateString();
