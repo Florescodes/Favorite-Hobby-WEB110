@@ -1,4 +1,5 @@
-//Code below is used for the date/time
+//Code below is used to ask the user for name
+//and will display in the name tag
 function getName() {
   var person = prompt('Please enter your name:');
   if (person != null) {
@@ -6,13 +7,15 @@ function getName() {
   }
 }
 
-//var date = new Date();
-//var n = date.toDateString();
-//var time = date.toLocaleTimeString();
-//document.getElementById('date').innerHTML = n + ' ' + time;
+//Code below is used for the date/time
+var time = new Date();
+var n = time.toDateString();
+var t = time.toLocaleTimeString();
+document.getElementById('time').innerHTML = n + ' ' + t;
 
 var timeDisplay = document.getElementById("date");
 
+//Code below is used for the real time date/time
 function refreshTime() {
   var date = new Date().toLocaleString("en-US", {timeZone: "America/Chicago"});
   var formattedString = date.replace(", ", " - ");
